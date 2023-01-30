@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeanette Obusa Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Shippori+Antique&family=Shippori+Antique+B1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style4.css" />
+  </head>
+  <body>
+    <!-- This section contains the headbar and left-side bar-->
+    <header>
+      <ul>
+        <li>
+          <a href="#home">
+            <img
+              src="Icon\home.png"
+              alt="home icon"
+              class="home"
+              width="10vh"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#contact"><img src="Icon\mail.png" alt="contact icon" /> </a>
+        </li>
+        <li><a href="resume\Obusa,Jeanette_RESUME.pdf" download>CV</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </header>
+
+    <!-- This is the start of my about me section left side bar -->
+    <nav id="home">
+      <div class="about">
+        About Me<br />
+        <figure>
+          <img
+            src="Image\profile.jpg"
+            alt="image of a Jeanette"
+            width="100px"
+            height="100px"
+          />
+        </figure>
+        Hello! My name is Jeanette Obusa and I'm an aspiring software engineer.
+        Though I major in Bachelor of Science in Electronics Engineering, my
+        true passion lies in software engineer! I dream of becoming a software
+        engineer and I believe that learning full-stack web development will be
+        the perfect foundation for me to achieve that goal.
+      </div>
+    </nav>
+    <!-- End of headbar and left-side bar-->
+
+    <!-- Thi is the start of my portfolio section -->
+    <nav id="portfolio">
+      <main class="portfolio">
+        <div class="nested-grid">
+          <div class="item sidebar">
+            <div class="overlay-container">
+              <img src="Image\react2.png" alt=" react logo" />
+              <div class="overlay">
+                <p>Overlay Text</p>
+              </div>
+            </div>
+          </div>
+          <div class="item content-1">MY &nbsp;&nbsp;PORTFOLIO&nbsp;&nbsp;</div>
+          <div class="item content-2">
+            <img src="Image\5js3.png" alt="html-css-js logo" />
+          </div>
+          <div class="item content-3">
+            <img src="Image\mongodb.png" alt="mongodb logo" />
+          </div>
+          <div class="item content-4">
+            <img src="Image\bootstrap.png" alt="bootstrap logo" />
+          </div>
+        </div>
+      </main>
+    </nav>
+    <!-- End of my portfolio -->
+
+    <!-- This is the start of my location and contact info  footer-->
+    <nav id="contact">
+      <footer>
+        <div class="footer-container">
+          <div class="left-box">
+            <p>Send me a message</p>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" /><br /><br />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" /><br /><br />
+              <label for="message">Message:</label>
+              <textarea id="message" name="message"></textarea><br /><br />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+          <div class="right-box">
+            <p class="contact">Contact Me:</p>
+
+            <div class="contact-info">
+              <a href="mailto:jeanetteobusa@gmail.com">
+                <img
+                  src="Icon\mail.png"
+                  alt="mail icon"
+                />jeanetteobusa@gmail.com</a
+              >
+              <p><img src="Icon\phone.png" alt="phone icon" /> +639058853238</p>
+              <p>
+                <img src="Icon\placeholder.png" alt="location icon" /> Monkayo
+                Davao de Oro
+              </p>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/jeanetteobusa/"
+                    target="_blank"
+                    ><img src="Icon\linkedin.png" alt="linkedin icon" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/Jehane20" target="_blank">
+                    <img src="Icon\github.png" alt="github icon"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://web.facebook.com/jehane.nette"
+                    target="_blank"
+                  >
+                    <img src="Icon\facebook.png" alt="facebook icon"
+                  /></a>
+                </li>
+              </ul>
+              <a href=""></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </nav>
+  </body>
+</html>

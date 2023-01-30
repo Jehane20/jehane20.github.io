@@ -1,0 +1,359 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(Image/background3.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  font-family: 'Shippori Antique', sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+}
+ul img {
+  width: 30px;
+  height: 25px;
+  filter: invert(95%) sepia(24%) saturate(3353%) hue-rotate(300deg)
+    brightness(114%) contrast(98%);
+}
+.contact-info img {
+  filter: none;
+  width: 15px;
+  height: 15px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  margin-top: 15px;
+  margin-right: 2rem;
+  line-height: 2rem;
+}
+.info ul {
+  display: flex;
+  justify-content: left;
+}
+li {
+  margin-right: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.778);
+}
+.item.sidebar > img {
+  width: 100%;
+  height: auto;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+main .item img {
+  transition: all 200ms linear ease-in-out;
+  object-fit: cover;
+  width: 100%;
+}
+main .item img:hover {
+  filter: grayscale(100%);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  background: rgba(255, 255, 255, 0.61);
+  border-radius: 5px;
+  margin: 3%;
+  font-family: 'Shippori Antique B1', sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+.footer-container a {
+  color: rgb(3, 13, 12);
+}
+
+.left-box {
+  width: 50%;
+  padding: 10px;
+}
+
+.right-box {
+  width: 50%;
+  padding: 10px;
+}
+
+.about {
+  background-color: #ffab81c6;
+  position: fixed;
+  width: 40vh;
+  height: fit-content;
+  padding: 15px;
+  margin-top: 4%;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 1px #e4e9ea76;
+}
+.about::first-line {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.nested-grid {
+  grid-gap: 2rem;
+}
+.portfolio .nested-grid {
+  display: grid;
+  width: 50%;
+  align-content: center;
+  height: auto;
+  margin-left: 30%;
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+  grid-template-areas:
+    ' content-1 content-1 content-1'
+    ' content-2 content-2 sidebar'
+    'content-3 content-4 sidebar';
+}
+.content-1 {
+  background-color: rgba(9, 7, 7, 0.825);
+  color: white;
+  margin-top: 100px;
+  width: fit-content;
+  font-size: 2rem;
+  grid-area: content-1;
+}
+.content-1::first-letter {
+  background-color: white;
+  color: rgba(16, 5, 5, 0.911);
+  font-size: 1.8rem;
+}
+.sidebar {
+  background: rgb(0, 149, 255);
+  height: 100%;
+  grid-area: sidebar;
+}
+.content-2 {
+  grid-area: content-2;
+  background: white;
+  height: 30vh;
+}
+.content-3 {
+  grid-area: content-3;
+  margin-top: 0;
+  background: green;
+  height: 35vh;
+}
+.content-4 {
+  background: rgb(213, 176, 234);
+  height: 35vh;
+  grid-area: content-4;
+  margin-top: 0;
+}
+.overlay {
+  position: absolute; /* position the overlay */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    228,
+    5,
+    5,
+    0.5
+  ); /* make the overlay semi-transparent */
+  color: rgb(254, 10, 10); /* text color */
+  text-align: center; /* center the text */
+  visibility: hidden; /* hide the overlay by default */
+}
+
+.container:hover .overlay {
+  visibility: visible; /* show the overlay on hover */
+}
+.overlay-container {
+  position: relative; /* this is needed for absolute positioning of the overlay */
+}
+
+/* for medium size devices */
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  header {
+    top: 0;
+    font-size: 1rem;
+    /* width: 50%; */
+  }
+  ul img {
+    width: 25px;
+    height: 20px;
+  }
+  ul {
+    padding-left: 1%;
+    /* justify-content: left; */
+  }
+  .about {
+    margin: auto;
+    margin-top: 50px;
+    padding-right: 10px;
+    width: 80%;
+    height: 10vh;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px;
+    position: unset;
+  }
+  .about::first-line {
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+  figure {
+    display: none;
+  }
+
+  .portfolio .nested-grid {
+    display: grid;
+    width: 50%;
+    height: max-content;
+    margin: auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 1rem;
+    grid-template-areas:
+      ' content-1 content-1'
+      ' content-2 sidebar '
+      'content-3 content-4 ';
+  }
+  .content-1 {
+    margin-top: 10px;
+    width: fit-content;
+    font-size: 1rem;
+  }
+
+  .content-1::first-letter {
+    background-color: white;
+    color: rgba(16, 5, 5, 0.911);
+    font-size: 1.8rem;
+  }
+
+  .sidebar {
+    width: fit-content;
+  }
+  .content-2 {
+    object-position: center;
+    width: fit-content;
+    height: 100%;
+  }
+  .content-3 {
+    width: fit-content;
+  }
+  .content-4 {
+    width: fit-content;
+  }
+  .footer-container {
+    font-size: 12px;
+    margin: 5%;
+  }
+  .item img {
+    height: auto;
+    width: auto;
+  }
+}
+
+/* end for media query medium devices */
+/* for Iphone SE */
+@media only screen and (max-width: 768px) {
+  header {
+    top: 0;
+    font-size: 1rem;
+    /* width: 50%; */
+  }
+  ul img {
+    width: 25px;
+    height: 20px;
+  }
+  ul {
+    padding-left: 1%;
+    /* justify-content: left; */
+  }
+  .about {
+    margin-top: 50px;
+    padding-right: 10px;
+    width: 80%;
+
+    margin: auto;
+    margin-top: 60px;
+    height: 20%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px;
+    position: unset;
+  }
+  .about::first-line {
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+  figure {
+    display: none;
+  }
+
+  .portfolio .nested-grid {
+    display: grid;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 1rem;
+    grid-template-areas:
+      ' content-1 content-1'
+      ' content-2 sidebar '
+      'content-3 content-4 ';
+  }
+  .content-1 {
+    margin-top: 1%;
+    width: fit-content;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .content-1::first-letter {
+    background-color: white;
+    color: rgba(16, 5, 5, 0.911);
+    font-size: 1.8rem;
+  }
+
+  .sidebar {
+    width: fit-content;
+  }
+  .content-2 {
+    object-position: center;
+    width: fit-content;
+    height: 100%;
+  }
+  .content-3 {
+    width: fit-content;
+  }
+  .content-4 {
+    width: fit-content;
+  }
+  .footer-container {
+    display: unset;
+    font-size: 12px;
+  }
+  .item img {
+    height: auto;
+    width: 100%;
+  }
+}
