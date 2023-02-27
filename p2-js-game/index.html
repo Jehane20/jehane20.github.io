@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Bitay Word Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script-folder/script.js" defer></script>
+  </head>
+  <body>
+    <section id="landing-page">
+      <div id="cover-image">
+        <img src="images\school-bkg2.png" alt="school image" />
+      </div>
+      <div class="txt-holder">
+        <img src="stickman\hangman-1.svg" alt="school image" />
+        <p>Classic</p>
+        <h1 class="game-name">Bitay</h1>
+        <p>W_rd G_me_</p>
+
+        <div class="instruction-wrapper">
+          <button id="instruction-btn">How to Play</button>
+          <div id="instructions">
+            Before the drawing of the gallows is complete, guess the hidden word
+            correctly or else face the consequences.
+            <br />
+            <i>
+              Trivia: Bitay is a word from tagalog means execution by hanging.
+              This game is similar to Hangman.
+            </i>
+          </div>
+        </div>
+        <button id="reveal-button">Start</button>
+      </div>
+    </section>
+
+    <section id="content">
+      <div class="exit-wrapper">
+        <button id="exit-button" class="exit-button">
+          <img src="icons\exitbtn.svg" alt="exit button" />
+        </button>
+      </div>
+
+      <div class="wrapper">
+        <div class="green-board">
+          <img src="images\greenboard2.jpg" alt="image of greenboard" />
+          <div id="letters-container">
+            <div class="mistake-figure">
+              <img
+                id="hangman-image"
+                src="stickman\hangman-5.svg"
+                alt="Hangman image"
+              />
+            </div>
+            <div id="word-container"></div>
+            <div id="message-container"></div>
+            <div id="buttons-container"></div>
+
+            <div id="reset-button">
+              <img src="icons\restartbtn.svg" alt="restart button" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="modal-window" class="modal-window">
+        <div class="modal-content">
+          <div class="exit-modal"></div>
+          <h2 id="modal-header"></h2>
+          <p id="result"></p>
+          <p id="win-streak"></p>
+          <di id="modal-button">
+            <img src="images\play.svg" alt="button background wood" />
+          </di>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
