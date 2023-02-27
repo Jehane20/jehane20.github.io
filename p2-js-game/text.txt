@@ -1,0 +1,152 @@
+1.put win or lose pop up window
+    1.1.if lost show how many question answered correctly
+    1.2.else restart or next question
+2.insert Timer
+3.timer
+3.Edit UI
+    3.1. add instruction(video??)
+4.show popup when restart or want to exit
+
+5.record question asked or add level(category)
+6.change fonts
+
+
+Halloween hangman words:
+    Midnight
+    Costume
+    Spooky
+    Nightmare
+    Haunted House
+    Supernatural
+    Poltergeist
+    Mausoleum
+    Gravestone
+    Warlock
+    Scare
+    Broomstick
+    Cemetery
+    Moonlight
+    Skeleton
+    Eyeballs
+    Phantom
+    Grim Reaper
+    Scream
+    Witchcraft
+    Hocus Pocus
+    Pumpkin
+    Macabre
+    Darkness
+    Eyepatch
+
+Easy hangman words:
+        Pool
+    Mama
+    Egg
+    Fire
+    Arm
+    Sun
+    Dinner
+    Free
+    Horse
+    Book
+    Ice
+    Sea
+    Home
+    Cross
+    Funny
+    House
+    Bed
+    Door
+    Hair
+    Good
+    Rain
+    Drink
+    Eye
+    Blood
+    Dog
+
+    Magic the Gathering hangman:
+Deathtouch
+Trample
+Eldrazi
+Vampire
+Shapeshifter
+Cycling
+Landwalk
+Double Strike
+Planeswalker
+Mountain
+Liliana Vess
+Hexproof
+Lifelink
+Indestructible
+Artifact Creature
+Enchantment
+First Strike
+Trample
+Zombie
+Nicol Bolas
+Werewolf
+Elemental
+Leviathan
+Vigilance
+Commander
+
+Easy Harry Potter hangman:
+    Animagus
+    Hermione Granger
+    Death Eaters
+    Hufflepuff
+    Auror
+    Galleon
+    Slytherin
+    Basilisk
+    Werewolf
+    Pumpkin juice
+    Golden Snitch
+    Gryffindor
+    Basilisk
+    Patronus
+    Gringotts
+    Ravenclaw
+    Quidditch
+    Squib
+    Butterbeer
+    Goblet of Fire
+    Sorting Hat
+    Thestral
+    Hippogriff
+    Seeker
+    Mudblood
+
+Disney hangman:
+Easy Disney hangman
+
+
+    Cinderella
+    Simba
+    Stitch
+    Mulan
+    Arielle
+    Mickey Mouse
+    Bambi
+    Merida
+    Anna
+    Woody
+    Forky
+    Chip
+    Dumbo
+    Tinker Bell
+    Elsa
+    Aladdin
+    Muppets
+    Thor
+    Aurora
+    Goofy
+    Pluto
+    Hercules
+    Yoda
+    Olaf
+    Scar
+
+
